@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//The main program
 @main
 struct MemorizeApp: App {
     var body: some Scene {
