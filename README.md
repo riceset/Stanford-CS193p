@@ -43,8 +43,7 @@ Here, you'll find my submissions for the assignments and projects throughout the
 
 For an in-depth explanation of some of the code and concepts used in this course, check out my article: ["Getting Started with SwiftUI - Stanford CS193p"](https://riceset.com/articles/getting-started-with-swiftui-stanford-cs193p/). This article provides additional insights and explanations that might help you understand the coursework better.
 
-<img width="422" alt="init" src="https://github.com/riceset/Stanford-CS193p/assets/48802655/38fe256d-2fd4-4057-a18f-d5e8a78b7784">
-<img width="422" alt="mid" src="https://github.com/riceset/Stanford-CS193p/assets/48802655/492557a6-3b59-4f60-9a48-2d543fcc65ba">
+<img width="422" src="https://github.com/riceset/Stanford-CS193p/assets/48802655/35410f64-f1f1-47e5-aaee-83b7b3142373">
 
 ## How to Use
 
