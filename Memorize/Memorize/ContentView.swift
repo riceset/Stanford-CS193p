@@ -80,5 +80,9 @@ struct CardView: View {
 }
 
 #Preview {
-    ContentView()
+    Group {
+        ContentView()
+        CardView(content: "a")
+        CardView(content: "a")
+    }
 }
