@@ -22,13 +22,6 @@ struct ContentView: View {
                 }
             }
             .foregroundColor(.red)
-            Spacer()
-            HStack {
-                add
-                Spacer()
-                remove
-            }
-            .font(.largeTitle)
         }
         .padding()
     }
@@ -80,9 +73,5 @@ struct CardView: View {
 }
 
 #Preview {
-    Group {
-        ContentView()
-        CardView(content: "a")
-        CardView(content: "a")
-    }
+    ContentView()
 }
