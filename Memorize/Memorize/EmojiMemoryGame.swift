@@ -8,9 +8,11 @@
 import SwiftUI
 
 class EmojiMemoryGame {
+    static var emojis: [String] = ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎️", "🚓", "🚑", "🚒", "🚐", "🚚", "🚛", "🚜", "🚲", "🛴", "🛵", "🏍️", "🛺", "🚔", "🚍", "🚘", "🚖", "🚡", "🚠", "🚟", "🚃", "🚞", "🚝", "🚄", "🚅"]
+    
     private var model =
         MemoryGame<String>(numberOfPairsOfCards: 4, createCardContent: { (index: Int) -> String in
-            return "👻"
+            return emojis[index]
         })
     
     var cards: Array<MemoryGame<String>.Card> {
