@@ -2,72 +2,41 @@
 //  ContentView.swift
 //  Memorize
 //
-//  Created by Komeno on 2023/12/10.
+//  Created by Komeno on 2024/06/11.
 //
 
 import SwiftUI
 
+//TODO: Convert into the complex form of the code based on the first week's lecture.
+
 struct ContentView: View {
-    var emojis: [String] = ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎️", "🚓", "🚑", "🚒", "🚐", "🚚", "🚛", "🚜", "🚲", "🛴", "🛵", "🏍️", "🛺", "🚔", "🚍", "🚘", "🚖", "🚡", "🚠", "🚟", "🚃", "🚞", "🚝", "🚄", "🚅"]
-    
-    @State var emojiCount = 24
-    
     var body: some View {
         VStack {
-            ScrollView {
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 80))]) {
-                    ForEach(emojis[0..<emojiCount], id: \.self) { emoji in
-                        CardView(content: emoji).aspectRatio(2/3, contentMode: .fit)
-                    }
-                }
-            }
-            .foregroundColor(.red)
-        }
-        .padding()
-    }
-    
-    var add: some View {
-        Button {
-            if (emojiCount < emojis.count) {
-                emojiCount += 1
-            }
-        } label: {
-            Image(systemName: "plus.circle")
-        }
-    }
-    var remove: some View {
-        Button {
-            if (emojiCount > 1) {
-                emojiCount -= 1
-            }
-        } label: {
-            Image(systemName: "minus.circle")
+            CardView(isFaceUp: true)
+            CardView(isFaceUp: false)
         }
     }
 }
 
 struct CardView: View {
-    @State var isFaceUp = true
-    var content: String
+    var isFaceUp: Bool = false
     
     var body: some View {
-        ZStack {
-            let rectangle = RoundedRectangle(cornerRadius: 20)
-            if isFaceUp {
-                rectangle
-                    .fill()
+        if isFaceUp {
+            ZStack {
+                RoundedRectangle(cornerRadius: 30)
                     .foregroundColor(.white)
-                rectangle
-                    .strokeBorder(lineWidth: 3)
-                Text(content)
+                RoundedRectangle(cornerRadius: 30)
+                    .strokeBorder()
+                    .foregroundColor(.yellow)
+                Text("✏️")
                     .font(.largeTitle)
-            } else {
-                rectangle
-                    .fill()
             }
-        }
-        .onTapGesture {
-            isFaceUp = !isFaceUp
+            .padding()
+        } else {
+            RoundedRectangle(cornerRadius: 30)
+                .foregroundColor(.yellow)
+                .padding()
         }
     }
 }
