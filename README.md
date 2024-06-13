@@ -39,12 +39,6 @@ Here, you'll find my submissions for the assignments and projects throughout the
 
 - ***[Memorize](https://github.com/riceset/Stanford-CS193p/tree/main/Memorize)***
 
-## Explaining the Code
-
-For an in-depth explanation of some of the code and concepts used in this course, check out my article: ["Getting Started with SwiftUI - Stanford CS193p"](https://riceset.com/articles/getting-started-with-swiftui-stanford-cs193p/). This article provides additional insights and explanations that might help you understand the coursework better.
-
-<img width="422" src="https://github.com/riceset/Stanford-CS193p/assets/48802655/35410f64-f1f1-47e5-aaee-83b7b3142373">
-
 ## How to Use
 
 To use any of the code from this repository, please consider the following:
