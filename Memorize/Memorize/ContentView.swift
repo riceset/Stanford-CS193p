@@ -10,6 +10,8 @@ import SwiftUI
 //TODO: Convert into the complex form of the code based on the first week's lecture.
 
 struct ContentView: View {
+    var viewModel: EmojiMemoryGame
+    
     let emojis = ["🇰🇵", "🇯🇵", "🇺🇸", "🇷🇺", "🇹🇼", "🇰🇷", "🇪🇸", "🇧🇷", "🇫🇷"]
     
     var body: some View {
